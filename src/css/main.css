@@ -1,7 +1,5 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body{
@@ -9,6 +7,8 @@ body{
     font-size: 16px;
     line-height: 1.5;
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 /*  NAVBAR  */
@@ -21,7 +21,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
+    padding: 0.5%;
 }
 
 nav ul{
@@ -54,7 +54,11 @@ nav ul li .link::before{
 }
 
 nav ul li .link:hover::before{
-    transform: scaleX(0.8);
+    transform: scaleX(1);
+}
+
+nav .more {
+    display: none
 }
 
 nav .menu{
@@ -74,10 +78,8 @@ nav .menu a{
 }
 
 nav .menu a:hover{
-    padding: 10px;
     color: white;
     background-color: black;
-    text-decoration: none;
 }
 
 nav .mobile{
@@ -86,7 +88,6 @@ nav .mobile{
 }
 
 nav .mobile .header{
-    background-color: black;
     display: flex;
     text-align: center;
     justify-content: space-between;
@@ -95,6 +96,7 @@ nav .mobile .header{
 
 nav .mobile .header a{
     color: white;
+    display: inline-flex;
     text-decoration: none;
     padding: 10px;
 }
@@ -107,7 +109,6 @@ nav .mobile .header #bmenu{
 }
 
 nav .mobile .links {
-    font-size: 20px;
     display: none;
     flex-direction: column;
     position: relative;
@@ -116,6 +117,7 @@ nav .mobile .links {
 
 nav .mobile .links a{
     display: block;
+    font-size: 20px;
     padding: 10px 20px;
     text-decoration: none;
     color: white;
@@ -124,6 +126,7 @@ nav .mobile .links a{
 
 nav .mobile .links a:hover{
     display: block;
+    font-size: 20px;
     padding: 10px 20px;
     text-decoration: none;
     color: black;
@@ -201,7 +204,7 @@ header{
     transform: scaleX(1);
 }
 
-@media screen and (max-width: 1132px) {
+@media screen and (max-width: 1315px) {
 
     nav .link-hide{
         display: none;
@@ -218,7 +221,7 @@ header{
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
 
     nav {
         width: 100%;
@@ -234,8 +237,8 @@ header{
     }
 
     header{
-        background-position: center 40px;
-        height: 50vh;
+        background-position: center;
+        height: 60vh;
     }
 
     
